@@ -6,6 +6,7 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 <h2>Official Website</h2>
 https://www.kashipara.com/project/php/13235/computer-base-test-php-project-source-code
 
+
 | Field               | Details                                                                 |
 |---------------------|-------------------------------------------------------------------------|
 | Product Name        | Computer Base Test project in PHP                                       |
