@@ -22,6 +22,7 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 <h2>Steps to Reproduce</h2>
 <ol>
   <li><b>Student Login:</b> Authenticate to student login using valid credentials.</li>
+  
   <img width="1399" height="865" alt="Screenshot 2025-07-18 140411" src="https://github.com/user-attachments/assets/1ab654ec-626d-473c-8374-490cf79d46fa" />
 
 ---
