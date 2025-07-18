@@ -39,8 +39,10 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 
 <h2>Remediation</h2>
 <ul>
-  <li></li>
-  <li></li>
+  <li><b>Input Sanitization:</b> Use libraries like `htmlspecialchars()` or DOMPurify to neutralize HTML/JS in user inputs.</li>
+  <li><b>Content Security Policy (CSP):</b> Implement CSP headers to restrict inline scripts and unauthorized sources.</li>
+  <li><b>Output Encoding:</b> Encode dynamic content before rendering (e.g., via OWASP’s ESAPI).</li>
+  <li><b>Framework Protections:</b> Leverage modern PHP frameworks (e.g., Laravel, Symfony) with built-in XSS protections.</li>
 </ul>
 
 ---
