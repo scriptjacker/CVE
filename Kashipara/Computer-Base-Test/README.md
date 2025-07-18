@@ -21,7 +21,8 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 
 <h2>Steps to Reproduce</h2>
 <ol>
-  <li></li>
+  <li>Access the "Search Directory" section from the dashboard.  
+   ![image](https://github.com/user-attachments/assets/38261406-36f4-445f-8a2f-8a4e733bd1ed)</li>
   <li></li>
 </ol>
 
