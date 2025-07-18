@@ -16,5 +16,4 @@ https://www.kashipara.com/project/php/13235/computer-base-test-php-project-sourc
 | Affected Parameter  | `smyFeedbacks`                                                          |
 | Request Method      | POST                                                                    |
 | Vulnerability Type  | Stored Cross-Site Scripting (XSS)                                       |
-| Official Website    | [Click Here](https://yourwebsite.com)
-                                       |
+| Official Website    | [Click Here](https://www.kashipara.com/project/php/13235/computer-base-test-php-project-source-code)                                   |
