@@ -23,6 +23,8 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 <ol>
   <li></li>
   <li></li>
+  <li></li>
+  <li></li>
 </ol>
 
 ---
