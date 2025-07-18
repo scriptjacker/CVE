@@ -29,8 +29,10 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 
 <h2>Impact</h2>
 <ul>
-  <li></li>
-  <li></li>
+  <li>**Session Hijacking**: Steal admin cookies or session tokens.</li>
+  <li>**Phishing Attacks**: Inject fake login forms to harvest credentials.</li>
+  <li>**Defacement**: Modify displayed content to spread misinformation.</li>
+  <li>**Malware Distribution**: Redirect users to malicious sites.</li>
 </ul>
 
 ---
