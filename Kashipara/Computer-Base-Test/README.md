@@ -44,8 +44,7 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 ---
 
 <h2>Reference</h2>
-[PortSwigger XSS Guide](https://portswigger.net/web-security/cross-site-scripting)  
-[OWASP XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)  
+[Kashipara Computer Base Test](https://www.kashipara.com/project/php/13235/computer-base-test-php-project-source-code) 
 
 ---
 
