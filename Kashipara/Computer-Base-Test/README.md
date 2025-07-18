@@ -41,9 +41,7 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 
   <li><b>Insert Malicious Payload:</b> Capture the request and modify the smyFeedbacks parameter with: <code>&lt;script&gt;alert(1)&lt;/script&gt;</code></li>
   
-<img width="1473" height="875" alt="Screenshot 2025-07-18 142303" src="https://github.com/user-attachments/assets/6f091725-65af-4e53-9814-47c6d9bba05b" />
-
-<img width="1449" height="894" alt="Screenshot 2025-07-18 142501" src="https://github.com/user-attachments/assets/e16c5064-b08d-4516-a229-395f33404db9" />
+  <img width="1505" height="942" alt="Screenshot 2025-07-18 142808" src="https://github.com/user-attachments/assets/bcf827bd-80ba-4d6c-b626-55b89df4ffca" />
 
 ---
   
