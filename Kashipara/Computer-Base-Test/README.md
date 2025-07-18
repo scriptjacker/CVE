@@ -21,13 +21,13 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 
 <h2>Steps to Reproduce</h2>
 <ol>
-  <li><b>Student Login:</b> Authenticate to student login using avlid credentials.</li>
+  <li><b>Student Login:</b> Authenticate to student login using valid credentials.</li>
   <li><b>Navigate to Add Feedback:</b> Access the "Add Feedback" section/page from student profile.</li>
   <li><b>Intercept Request:</b> Configure Burp Suite (127.0.0.1:8080) to intercept the POST request. Enable the Interceptor in Burp's Proxy tab.</li>
   <li><b>Insert Malicious Payload:</b> Capture the request and modify the smyFeedbacks parameter with: <code>&lt;script&gt;alert(1)&lt;/script&gt;</code></li>
-  <li><b>Admin Login:</b> Redirect users to malicious sites.</li>
-  <li><b>Navigate to All Feedbacks:</b> Redirect users to malicious sites.</li>
-  <li><b>Observe Execution:</b> Redirect users to malicious sites.</li>
+  <li><b>Admin Login:</b> Authenticate to admin portal using valid credentials.</li>
+  <li><b>Navigate to All Feedbacks:</b> Access the "All Feedbacks" page from admin account.</li>
+  <li><b>Observe Execution:</b> The injected script renders persistently, triggering an alert when the "All Feedbacks" page is reloaded.</li>
 </ol>
 
 ---
