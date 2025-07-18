@@ -33,3 +33,20 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
   <li></li>
 </ul>
 
+---
+
+<h2>Remediation</h2>
+<ul>
+  <li></li>
+  <li></li>
+</ul>
+
+---
+
+<h2>Reference</h2>
+[PortSwigger XSS Guide](https://portswigger.net/web-security/cross-site-scripting)  
+[OWASP XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)  
+
+---
+
+**Urgency**: Patch immediately to prevent exploitation in production environments.  
