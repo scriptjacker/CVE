@@ -17,9 +17,15 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 | Vulnerability Type  | Stored Cross-Site Scripting (XSS)                                       |
 | Official Website    | [Kashipara Computer Base Test](https://www.kashipara.com/project/php/13235/computer-base-test-php-project-source-code) |
 
+---
 
 <h2>Steps to Reproduce</h2>
 <ol>
   <li></li>
   <li></li>
 </ol>
+
+---
+
+<h2>Impact</h2>
+- test
