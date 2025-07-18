@@ -4,7 +4,7 @@
 <h2>Vulnerability Summary</h2>
 A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the <code>/users/adminpanel/admin/home.php</code> file of Kashipara's Computer Base Test (v1.0). Attackers can inject malicious scripts via the smyFeedbacks POST parameter, which are then persistently stored and executed when the search functionality is used.
 
-<br>
+---
 
 | Field               | Details                                                                 |
 |---------------------|-------------------------------------------------------------------------|
@@ -15,7 +15,7 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 | Affected Parameter  | `smyFeedbacks`                                                          |
 | Request Method      | POST                                                                    |
 | Vulnerability Type  | Stored Cross-Site Scripting (XSS)                                       |
-| Official Website    | [Kashipara Computer Base Test](https://www.kashipara.com/project/php/13235/computer-base-test-php-project-source-code)
+| Official Website    | [Kashipara Computer Base Test](https://www.kashipara.com/project/php/13235/computer-base-test-php-project-source-code) |
 
 
 <h2>Steps to Reproduce</h2>
