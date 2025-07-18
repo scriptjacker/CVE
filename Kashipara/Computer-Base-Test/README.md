@@ -44,7 +44,7 @@ A critical Stored Cross-Site Scripting (XSS) vulnerability was discovered in the
 ---
 
 <h2>Reference</h2>
-[https://portswigger.net/web-security/cross-site-scripting](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+
 
 ---
 
