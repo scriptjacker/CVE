@@ -32,7 +32,6 @@ A critical SQL Injection vulnerability exists in the `id` parameter of the **Com
    ```
 3. **Intercept the Request:**  
    - Enable Burp Suite and set up the browser to route traffic through it.
-   - 
     <img width="1429" height="796" alt="Screenshot 2025-12-20 161937" src="https://github.com/user-attachments/assets/c522ca15-9eed-4f9f-8b36-0489c1406bf4" />
 
 
