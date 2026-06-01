@@ -24,17 +24,9 @@ A critical Broken Access Control (BAC) / Insecure Direct Object Reference (IDOR)
   <li><b>Admin Login:</b> Authenticate to the admin portal using valid credentials.</li>
   <img width="1551" height="852" alt="admin-login" src="https://github.com/user-attachments/assets/96aeb060-2f41-4a5e-8434-2758398c8a2b" />
 
-
----
-
   <li><b>Navigate to Manage Examinee:</b> Access the "Manage Examinee" section from the admin dashboard. Observe that each student row has an Edit button that triggers a modal.</li>
 
----
-
   <li><b>Intercept the Edit Request:</b> Configure Burp Suite (127.0.0.1:8080) to intercept traffic. Click any Edit button on the Manage Examinee page and capture the GET request to <code>users/adminpanel/admin/facebox_modal/updateExaminee.php?id=</li>
-
-
----
 
   <li><b>Login student account & Visit same endpoint from student account:</b> In Burp Suite, forward the request to Repeater. Access student account and visit `users/adminpanel/admin/facebox_modal/updateExaminee.php?id=` Change the <code>id</code> value to any other integer (e.g., increment from <code>id=9114</code> to <code>id=9115</code>, <code>id=9116</code>, etc.).</li>
 <img width="1863" height="830" alt="10 - BAC  IDOR 2" src="https://github.com/user-attachments/assets/77e148b2-2ef7-4b59-af71-be4d67a1be87" />
@@ -45,8 +37,6 @@ A critical Broken Access Control (BAC) / Insecure Direct Object Reference (IDOR)
 <img width="1820" height="808" alt="10 - BAC  IDOR 3" src="https://github.com/user-attachments/assets/b0d5d960-c3db-4314-b7d8-51045074ff9f" />
 
 
----
-
   <li><b>Enumerate All Students:</b> Repeat the request for sequential <code>id</code> values. Every registered student's credentials are exposed without restriction and by low priviledge user (student).</li>
 
 ```
@@ -55,8 +45,6 @@ GET /users/adminpanel/admin/facebox_modal/updateExaminee.php?id=9115
 GET /users/adminpanel/admin/facebox_modal/updateExaminee.php?id=9116
 ...
 ```
-
-  <!-- [SCREENSHOT: Multiple responses showing different students' data across sequential IDs] -->
 
 </ol>
 
