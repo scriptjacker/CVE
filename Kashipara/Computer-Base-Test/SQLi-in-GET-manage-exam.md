@@ -41,6 +41,9 @@ A critical SQL Injection vulnerability exists in the `id` parameter of the **Com
    - Forward the modified request in Burp Suite Repeater.  
    - Observe the delay in the response time.  
    - The server will delay its response by 5 seconds, confirming successful execution of the `SLEEP()` function, indicating a **time-based SQL injection vulnerability**.
+<img width="1913" height="856" alt="4 - SQLi in admin GET 2" src="https://github.com/user-attachments/assets/97f96cd4-4991-4198-97fa-f6647957d10f" />
+<img width="1844" height="894" alt="4 - SQLi in admin GET" src="https://github.com/user-attachments/assets/93020d45-243b-44d8-8eca-04d623f161c9" />
+
 
 
 
