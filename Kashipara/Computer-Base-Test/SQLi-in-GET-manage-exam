@@ -1,0 +1,73 @@
+# SQL Injection in GET parameter in Computer Base Test V1.0 Vulnerability Report
+
+## Vulnerability Summary
+A critical SQL Injection vulnerability exists in the `id` parameter of the **Computer Base Test Project v1.0**, allowing remote attackers to execute arbitrary SQL commands. By injecting time-delay payloads, attackers can determine the presence of a SQL Injection flaw by observing server response delays.
+
+## Affected Product
+
+| **Attribute**        | **Details** |
+|----------------------|------------|
+| **Product Name**    | Computer Base Test project in PHP |
+| **Vendor**          | Kashipara |
+| **Version**         | v1.0 |
+| **Affected File**   | `/users/adminpanel/admin/manage-exam.php` |
+| **Affected Parameter** | `id` |
+| **Method**         | `GET` |
+| **Vulnerability Type** | SQL Injection |
+| **Vulnerability Type** | Time-Based Blind SQL Injection |
+
+## Official Website
+
+[Kashipara Computer Base Test](https://www.kashipara.com/project/php/13235/computer-base-test-php-project-source-code)
+
+## Steps to Reproduce
+
+1. **Admin Login: Authenticate to student login using valid credentials**
+   
+
+2. **Access the Vulnerable URL:**  
+   ```
+   http://127.0.0.1/cve_project_1/users/adminpanel/admin/manage-exam.php
+   ```
+3. **Intercept the Request:**  
+   - Enable Burp Suite and set up the browser to route traffic through it.
+   
+
+
+4. **Modify the Parameter:**  
+   - Send the request to Burp Suite **Repeater** and modify the `id` parameter with the following payload:
+     ```
+     '1%27;%20SELECT%20SLEEP(5)--+-'
+     ```
+     
+
+    
+
+    
+5. **Send the Modified Request:**  
+   - Forward the modified request in Burp Suite Repeater.  
+   - Observe the delay in the response time.  
+   - The server will delay its response by 5 seconds, confirming successful execution of the `SLEEP()` function, indicating a **time-based SQL injection vulnerability**.
+  
+
+
+## Impact
+
+- **Data Theft:** Unauthorized access to sensitive user or system data.  
+- **Data Manipulation:** Modification or deletion of database records.  
+- **Credential Exposure:** Extraction of usernames, passwords, or authentication details.  
+- **Server Compromise:** Potential exploitation of underlying server systems.  
+- **Reconnaissance:** Enumeration of database structures (tables, columns, schemas).  
+- **Financial Loss:** Downtime and potential monetary losses.  
+- **Loss of Reputation:** User trust degradation due to service disruption or data breaches.  
+
+## Recommended Mitigations
+
+- **Use Prepared Statements (Parameterized Queries).**  
+- **Sanitize User Inputs:** Validate and filter all incoming data.  
+- **Implement Web Application Firewall (WAF).**  
+- **Use the Principle of Least Privilege (PoLP) for database users.**  
+- **Regularly Update and Patch the Application.**  
+- **Monitor Logs for Suspicious Activities.**  
+
+For detailed guidelines, refer to: [OWASP SQL Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html).
