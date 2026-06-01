@@ -10,7 +10,7 @@ A critical SQL Injection vulnerability exists in the `username` and `password` p
 | **Product Name**    | Computer Base Test project in PHP |
 | **Vendor**          | Kashipara |
 | **Version**         | v1.0 |
-| **Affected File**   | `/users/adminpanel/admin/query/addCourseExe.php` |
+| **Affected File**   | `/users/adminpanel/admin/query/loginExe.php` |
 | **Affected Parameter** | `username` & `password` |
 | **Method**         | `POST` |
 | **Vulnerability Type** | SQL Injection |
