@@ -29,9 +29,6 @@ A critical SQL Injection vulnerability exists in the `id` parameter of the **Com
    ```
    http://127.0.0.1/cve_project_1/users/adminpanel/admin/manage-exam.php
    ```
-3. **Intercept the Request:**  
-   - Enable Burp Suite and set up the browser to route traffic through it.
-   
 
 
 4. **Modify the Parameter:**  
@@ -39,16 +36,13 @@ A critical SQL Injection vulnerability exists in the `id` parameter of the **Com
      ```
      '1%27;%20SELECT%20SLEEP(5)--+-'
      ```
-     
-
-    
-
-    
+ 
 5. **Send the Modified Request:**  
    - Forward the modified request in Burp Suite Repeater.  
    - Observe the delay in the response time.  
    - The server will delay its response by 5 seconds, confirming successful execution of the `SLEEP()` function, indicating a **time-based SQL injection vulnerability**.
-  
+
+
 
 
 ## Impact
